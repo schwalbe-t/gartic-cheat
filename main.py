@@ -7,6 +7,7 @@ import math
 import sys
 import time
 import requests
+import os
 from PIL import Image
 from io import BytesIO
 import tkinter as tk
@@ -114,3 +115,5 @@ for (color_x, color_y), points in color_points.items():
         mouse.position = (dest_root_x + x, dest_root_y + y)
         mouse.click(Button.left)
         time.sleep(DRAW_SPEED)
+
+print("Done!")
